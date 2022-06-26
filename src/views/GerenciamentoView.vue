@@ -19,8 +19,10 @@ export default {
   methods: {
     salvar() {
       this.jogadores.push({
-        nome: this.novo_,
-        time: this.novo_time,
+        nome: this.novo_editora,
+        informacoes: this.novo_genero,
+        detalhes: this.novo_autor,
+        book: this.novo_livro,
       });
     },
   },
