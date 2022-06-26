@@ -8,7 +8,7 @@ footer {
   height: 10%;
   background-color: rgb(171, 76, 135);
   color: black;
-  font-size: 1.3rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
