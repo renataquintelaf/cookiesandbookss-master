@@ -23,6 +23,6 @@ export default {
 }
 
 main {
-  height: 700px;
+  height: 800px;
 }
 </style>

@@ -10,7 +10,7 @@ export default {
           livro: "Livro 1",
         },
       ],
-      nova_editora: "",
+      novo_editora: "",
       novo_genero: "",
       novo_autor: "",
       novo_livro: "",
@@ -18,30 +18,16 @@ export default {
   },
   methods: {
     salvar() {
-      if (this.novo_editora !== "") {
-        this.livros.push({
-          nome: this.novo_editora,
-        });
-        this.novo_editora = "";
-      }
-      if (this.novo_genero !== "") {
-        this.livros.push({
-          nome: this.novo_genero,
-        });
-        this.novo_genero = "";
-      }
-      if (this.novo_autor !== "") {
-        this.livros.push({
-          nome: this.novo_autor,
-        });
-        this.novo_autor = "";
-      }
-      if (this.novo_livro !== "") {
-        this.livros.push({
-          nome: this.novo_livro,
-        });
-        this.novo_livro = "";
-      }
+      this.livros.push({
+        editora: this.novo_editora,
+        genero: this.novo_genero,
+        autor: this.novo_autor,
+        livro: this.novo_livro,
+      });
+    },
+    excluir(livro) {
+      const indice = this.livros.indexOf(livro);
+      this.livros.splice(indice, 1);
     },
   },
 };
@@ -54,9 +40,6 @@ export default {
     </div>
     <div class="form-input">
       <input type="text" v-model="novo_editora" @keydown.enter="salvar" />
-      <div class="input-um">
-        <input type="text" v-model="novo_editora" />
-      </div>
       <div class="input-dois">
         <input type="text" v-model="novo_genero" />
       </div>
@@ -66,7 +49,7 @@ export default {
       <div class="input-quatro">
         <input type="text" v-model="novo_livro" />
       </div>
-      <button @click="salvar">Salvar</button>
+      <button @click.enter="salvar">Salvar</button>
     </div>
     <div class="list-times">
       <table>
@@ -84,8 +67,11 @@ export default {
           <tr v-for="livro in livros" :key="livro.editora">
             <td>{{ livro.editora }}</td>
             <td>{{ livro.genero }}</td>
-            <td>{{ livro.novo_autor }}</td>
-            <td>{{ livro.novo_livro }}</td>
+            <td>{{ livro.autor }}</td>
+            <td>{{ livro.livro }}</td>
+            <td>
+              <button @click="excluir(livro)">Excluir</button>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -108,7 +94,6 @@ export default {
   padding: 2rem;
 }
 .form-input input {
-  width: 80%;
   padding: 0.5rem;
   border-radius: 10px;
   background-color: #a67794;
