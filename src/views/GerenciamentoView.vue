@@ -39,15 +39,20 @@ export default {
       <h2>Gerenciamento de Livros</h2>
     </div>
     <div class="form-input">
-      <input type="text" v-model="novo_editora" @keydown.enter="salvar" />
+      <input
+        type="text"
+        v-model="novo_editora"
+        @keydown.enter="salvar"
+        placeholder="Editora"
+      />
       <div class="input-dois">
-        <input type="text" v-model="novo_genero" />
+        <input type="text" v-model="novo_genero" placeholder="Gênero" />
       </div>
       <div class="input-tres">
-        <input type="text" v-model="novo_autor" />
+        <input type="text" v-model="novo_autor" placeholder="Autor" />
       </div>
       <div class="input-quatro">
-        <input type="text" v-model="novo_livro" />
+        <input type="text" v-model="novo_livro" placeholder="Livro" />
       </div>
       <button @click.enter="salvar">Salvar</button>
     </div>
@@ -127,5 +132,9 @@ table {
 table thead {
   background-color: rgb(166, 119, 148);
   color: white;
+}
+::placeholder {
+  color: black;
+  opacity: 0.5;
 }
 </style>

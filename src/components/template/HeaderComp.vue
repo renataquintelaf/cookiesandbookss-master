@@ -1,6 +1,10 @@
 <template>
   <header>
-    <div class="header"></div>
+    <div class="menu">
+      <span> <RouterLink to="/">Home</RouterLink> </span>
+      <span>|</span>
+      <span><RouterLink to="/gerenciamento">Livros</RouterLink></span>
+    </div>
   </header>
 </template>
 <style>
@@ -13,5 +17,9 @@ header {
   align-items: center;
   padding-left: 20px;
   border-radius: 10px;
+}
+header span {
+  padding: 0 20px;
+  text-decoration: none;
 }
 </style>

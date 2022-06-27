@@ -1,16 +1,14 @@
 <script>
 import HeaderComp from "@/components/template/HeaderComp.vue";
-import MenuLateral from "@/components/template/MenuLateral.vue";
 import FooterComp from "@/components/template/FooterComp.vue";
 
 export default {
-  components: { HeaderComp, MenuLateral, FooterComp },
+  components: { HeaderComp, FooterComp },
 };
 </script>
 
 <template>
   <HeaderComp />
-  <MenuLateral />
   <main><RouterView /></main>
   <FooterComp />
 </template>
@@ -23,6 +21,10 @@ export default {
 }
 
 main {
-  height: 800px;
+  height: 80%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
 </style>
