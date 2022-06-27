@@ -2,6 +2,7 @@
 
 <template>
   <main>
-    <h1>texto</h1>
+    <h1>alegria</h1>
   </main>
 </template>
+<style></style>

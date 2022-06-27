@@ -101,12 +101,10 @@ export default {
 .form-input input {
   padding: 0.5rem;
   border-radius: 10px;
-  background-color: #a67794;
   border: transparent;
 }
 
 .form-input button {
-  background-color: rgb(166, 119, 148);
   border-radius: 20%;
 }
 input,
@@ -130,7 +128,6 @@ table {
 }
 
 table thead {
-  background-color: rgb(166, 119, 148);
   color: white;
 }
 ::placeholder {
