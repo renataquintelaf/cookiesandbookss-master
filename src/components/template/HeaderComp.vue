@@ -4,6 +4,12 @@
       <span> <RouterLink to="/">Home</RouterLink> </span>
       <span>|</span>
       <span><RouterLink to="/gerenciamento">Livros</RouterLink></span>
+      <span>|</span>
+      <span><RouterLink to="/categorias">Categorias</RouterLink></span>
+      <span>|</span>
+      <span><RouterLink to="/autor">Autor</RouterLink></span>
+      <span>|</span>
+      <span><RouterLink to="/editora">Editora</RouterLink></span>
     </div>
     <div class="menu-direito">
       <span><RouterLink to="/tomeumcookie">Cookie</RouterLink></span>
@@ -25,8 +31,7 @@ header span {
   padding: 0 20px;
   text-decoration: none;
 }
-header span:hover{
-  background-color: var(--cor-secundaria-alt) ;
+header span:hover {
+  background-color: var(--cor-secundaria-alt);
 }
 </style>
-

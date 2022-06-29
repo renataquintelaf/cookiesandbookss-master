@@ -18,6 +18,21 @@ const router = createRouter({
       name: "cookie",
       component: () => import("../views/CookieView.vue"),
     },
+    {
+      path: "/categorias",
+      name: "categorias",
+      component: () => import("../views/CategoriasView.vue"),
+    },
+    {
+      path: "/autor",
+      name: "autor",
+      component: () => import("../views/AutorView.vue"),
+    },
+    {
+      path: "/editora",
+      name: "editora",
+      component: () => import("../views/EditoraView.vue"),
+    },
   ],
 });
 

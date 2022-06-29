@@ -4,9 +4,9 @@ export default {
     return {
       livros: [
         {
-          editora: "Livro 1",
-          genero: "Idioma",
-          autor: "Código",
+          editora: " Editora",
+          genero: "Ano 1",
+          autor: "N° Serie",
         },
       ],
       novo_editora: "",
@@ -33,47 +33,43 @@ export default {
 
 <template>
   <div class="container">
-    <div class="left-side">
-      <div class="title">
-        <h2>Livros</h2>
-      </div>
-      <div class="form-input">
-        <div class="input-dois">
-          <input type="text" v-model="novo_genero" placeholder="Livro" />
-        </div>
-        <div class="input-tres">
-          <input type="text" v-model="novo_autor" placeholder="Idioma" />
-        </div>
-        <div class="input-quatro">
-          <input type="text" v-model="novo_livro" placeholder="Código" />
-        </div>
-        <button @click.enter="salvar">Salvar</button>
-      </div>
+    <div class="title">
+      <h2>Editora</h2>
     </div>
-    <div class="right-side">
-      <div class="list-times">
-        <table>
-          <thead>
-            <tr>
-              <th>Livro</th>
-              <th>Idioma</th>
-              <th>Código</th>
-              <th>Opções</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr v-for="livro in livros" :key="livro.editora">
-              <td>{{ livro.editora }}</td>
-              <td>{{ livro.genero }}</td>
-              <td>{{ livro.autor }}</td>
-              <td>
-                <button @click="excluir(livro)">Excluir</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="form-input">
+      <div class="input-dois">
+        <input type="text" v-model="novo_genero" placeholder="Editora" />
       </div>
+      <div class="input-tres">
+        <input type="text" v-model="novo_autor" placeholder="Ano" />
+      </div>
+      <div class="input-quatro">
+        <input type="text" v-model="novo_livro" placeholder="N°Série" />
+      </div>
+      <button @click.enter="salvar">Salvar</button>
+    </div>
+    <div class="list-times">
+      <table>
+        <thead>
+          <tr>
+            <th>Editora</th>
+            <th>Ano</th>
+            <th>N° Série</th>
+            <th>Opções</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr v-for="livro in livros" :key="livro.editora">
+            <td>{{ livro.editora }}</td>
+            <td>{{ livro.genero }}</td>
+            <td>{{ livro.autor }}</td>
+            <td>
+              <button @click="excluir(livro)">Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </template>

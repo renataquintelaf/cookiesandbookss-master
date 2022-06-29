@@ -1,9 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
 :root{
-  --cor-primaria:#D7A86E;
-  --cor-primaria-alt: #FFEBC1;
-  --cor-secundaria: #8E3200;
-  --cor-secundaria-alt: #A64B2A;
+  --cor-primaria:#272d33;
+  --cor-primaria-alt: #1a1e22;
+  --cor-secundaria: #494e54;
+  --cor-secundaria-alt: #d8d2cc;
 }
 body{
   background-color: var(--cor-primaria-alt);
+}
+
+* {
+  color: #fff;
+
+}
+
+input {
+  color: black;
+}
+
+button {
+  color: var(--cor-primaria);
+
+}
+h2{
+  font-family: 'Rubik Moonrocks', cursive;
 }
