@@ -25,13 +25,9 @@ header {
   align-items: center;
   padding-left: 20px;
   justify-content: space-between;
-  background-color: var(--cor-primaria);
 }
 header span {
   padding: 0 20px;
   text-decoration: none;
-}
-header span:hover {
-  background-color: var(--cor-secundaria-alt);
 }
 </style>

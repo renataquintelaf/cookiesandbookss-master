@@ -80,7 +80,7 @@ export default {
 <style>
 .title {
   text-align: center;
-  margin: 2rem 0;
+  margin: 2rem 0;font-family: 'Indie Flower', cursive;
   font-size: 150%;
 }
 
@@ -122,7 +122,7 @@ table {
 }
 
 table thead {
-  color: white;
+  color: black;
 }
 ::placeholder {
   color: black;

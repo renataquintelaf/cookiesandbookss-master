@@ -118,7 +118,7 @@ table {
 }
 
 table thead {
-  color: white;
+  color: black;
 }
 ::placeholder {
   color: black;
