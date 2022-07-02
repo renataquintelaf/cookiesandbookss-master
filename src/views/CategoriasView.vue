@@ -4,7 +4,7 @@ export default {
     return {
       livros: [
         {
-          editora: "Categoria 1",
+          editora: "Romance",
         },
       ],
       novo_editora: "",

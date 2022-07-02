@@ -4,9 +4,9 @@ export default {
     return {
       livros: [
         {
-          editora: " Editora",
-          genero: "Ano 1",
-          autor: "N° Serie",
+          editora: "Seguinte",
+          genero: "2007",
+          autor: "934765",
         },
       ],
       novo_editora: "",

@@ -13,8 +13,12 @@
 <style>
 .h1-home {
   font-size: 70px;
+  padding-top: 10%;
+  padding-left: 40%;
 }
 .h2-home {
   font-family: "Indie Flower", cursive;
+  padding-left: 20%;
+
 }
 </style>

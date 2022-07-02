@@ -4,7 +4,7 @@ export default {
     return {
       livros: [
         {
-          autor: "Autor 1",
+          autor: "Coollen Hoover",
         },
       ],
       novo_autor: "",

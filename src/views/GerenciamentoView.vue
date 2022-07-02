@@ -4,9 +4,9 @@ export default {
     return {
       livros: [
         {
-          editora: "Livro 1",
-          genero: "Idioma",
-          autor: "Código",
+          editora: "Uma Farsa De Amor Na Espanha",
+          genero: "Português",
+          autor: "908765",
         },
       ],
       novo_editora: "",
@@ -20,7 +20,6 @@ export default {
         editora: this.novo_editora,
         genero: this.novo_genero,
         autor: this.novo_autor,
-        livro: this.novo_livro,
       });
     },
     excluir(livro) {
@@ -39,13 +38,13 @@ export default {
       </div>
       <div class="form-input">
         <div class="input-dois">
-          <input type="text" v-model="novo_genero" placeholder="Livro" />
+          <input type="text" v-model="novo_editora" placeholder="Livro" />
         </div>
         <div class="input-tres">
-          <input type="text" v-model="novo_autor" placeholder="Idioma" />
+          <input type="text" v-model="novo_genero" placeholder="Idioma" />
         </div>
         <div class="input-quatro">
-          <input type="text" v-model="novo_livro" placeholder="Código" />
+          <input type="text" v-model="novo_autor" placeholder="Código" />
         </div>
         <button @click.enter="salvar">Salvar</button>
       </div>
@@ -80,7 +79,7 @@ export default {
 <style>
 .title {
   text-align: center;
-  margin: 2rem 0;font-family: 'Indie Flower', cursive;
+  margin: 2rem 0;
   font-size: 150%;
 }
 
